@@ -18,8 +18,14 @@ function mouseTracking(e) {
     mouse.y = e.clientY || e.pageY;
     var containerRectangle = document.getElementById("mySliderContainer").getBoundingClientRect();
 
-    if (mouse.x > containerRectangle.left && mouse.x < containerRectangle.right &&
-            mouse.y > containerRectangle.top && mouse.y < containerRectangle.bottom) {
+	var center = containerRectangle.left + (containerRectangle.right - containerRectangle.left) / 2;
+
+    if ((mouse.x > containerRectangle.left && mouse.x < containerRectangle.right &&
+            mouse.y > containerRectangle.top && mouse.y < containerRectangle.bottom)
+		||
+		(mouse.x > center - 80 && mouse.x < center + 80 &&
+            mouse.y > containerRectangle.bottom && mouse.y < containerRectangle.bottom + 30)){
+		
         sliderRunning = false;
     } else {
         sliderRunning = true;
