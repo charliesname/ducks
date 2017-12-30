@@ -45,17 +45,15 @@
 
 			<!-- BÖRJAN menu -->
 			<form onsubmit="return false">
-			<nav id="main-nav">
+			<nav id="main-nav" class="mobile">
 				<ul class="topnav">
-					<li class="menu mobile" onclick="topMenu()"><a href="#home">| | |</a></li>
-					<li class="vagn mobile"><a href=" kundvagn/" ><span id="kundvagn1">0</span>&nbsp;</a></li>
+					<li class="menu" onclick="topMenu()"><a href="#home">| | |</a></li>
+					<li class="vagn"><a href=" kundvagn/" ><span id="kundvagn1">0</span>&nbsp;</a></li>
 
 					<li class="left"><a class="active" href=" ">HEM</a></li>
 					<li class="left"><a href=" yrken/">YRKEN</a></li>
 					<li class="left"><a href=" superhjaltar/">SUPERHJÄLTAR</a></li>
 					<li class="left"><a href=" ovriga/">ÖVRIGA</a></li>
-
-					<li class="vagn2 nomobile"><a href=" kundvagn/" ><span id="kundvagn2">0</span>&nbsp;</a></li>
 				</ul>
 			</nav>
 			</form>
@@ -83,28 +81,40 @@
 
 
 			<!-- BÖRJAN main -->
-			<main>
-				<div id="mySliderContainer">
-					<div class="mySlides"><a href="superhjaltar/batman.html"><img src="images/superhjaltar/batman-slide.jpg" alt="batman"></a></div>
-					<div class="mySlides"><a href="superhjaltar/superman.html"><img src="images/superhjaltar/superman-slide.jpg" alt="batman"></a></div>
-					<div class="mySlides"><a href="superhjaltar/superduck.html"><img src="images/superhjaltar/superduck-slide.jpg" alt="batman"></a></div>
-					<div class="mySlides"><a href="superhjaltar/wonderwoman.html"><img src="images/superhjaltar/wonderwoman-slide.jpg" alt="batman"></a></div>
-					<div class="mySlides"><a href="superhjaltar/spiderman.html"><img src="images/superhjaltar/spiderman-slide.jpg" alt="batman"></a></div>
-					<div class="fl mySliderArrow mySliderArrowLeft" onclick="plusDivs(-1, 'r')">&#10094;</div>
-					<div class="fr mySliderArrow mySliderArrowRight" onclick="plusDivs(1, 'l')">&#10095;</div>
-					<h2>Nya superhjälteankor ENDAST 29kr</h2>
-				</div>
-				
-				<div id="mySliderMenu">
-					<span class="mySliderButton" onclick="currentDiv(1)"></span>
-					<span class="mySliderButton" onclick="currentDiv(2)"></span>
-					<span class="mySliderButton" onclick="currentDiv(3)"></span>
-					<span class="mySliderButton" onclick="currentDiv(4)"></span>
-					<span class="mySliderButton" onclick="currentDiv(5)"></span>
-				</div>
+			<div class="clear"></div>
+			<div id="nav-main">
+				<nav id="left-nav" class="nomobile">
+					<ul class="topnav">
+						<li class="left"><a class="active" href=" ">HEM</a></li>
+						<li class="left"><a href=" yrken/">YRKEN</a></li>
+						<li class="left"><a href=" superhjaltar/">SUPERHJÄLTAR</a></li>
+						<li class="left"><a href=" ovriga/">ÖVRIGA</a></li>
+					</ul>
+				</nav>
 
-				<div class="clear"> </div>
-			</main>
+				<main id="right-main">
+					<div id="mySliderContainer">
+						<div class="mySlides"><a href="superhjaltar/batman.html"><img src="images/superhjaltar/batman-slide.jpg" alt="batman"></a></div>
+						<div class="mySlides"><a href="superhjaltar/superman.html"><img src="images/superhjaltar/superman-slide.jpg" alt="batman"></a></div>
+						<div class="mySlides"><a href="superhjaltar/superduck.html"><img src="images/superhjaltar/superduck-slide.jpg" alt="batman"></a></div>
+						<div class="mySlides"><a href="superhjaltar/wonderwoman.html"><img src="images/superhjaltar/wonderwoman-slide.jpg" alt="batman"></a></div>
+						<div class="mySlides"><a href="superhjaltar/spiderman.html"><img src="images/superhjaltar/spiderman-slide.jpg" alt="batman"></a></div>
+						<div class="fl mySliderArrow mySliderArrowLeft" onclick="plusDivs(-1, 'r')">&#10094;</div>
+						<div class="fr mySliderArrow mySliderArrowRight" onclick="plusDivs(1, 'l')">&#10095;</div>
+						<h2>Nya superhjälteankor ENDAST 29kr</h2>
+					</div>
+
+					<div id="mySliderMenu">
+						<span class="mySliderButton" onclick="currentDiv(1)"></span>
+						<span class="mySliderButton" onclick="currentDiv(2)"></span>
+						<span class="mySliderButton" onclick="currentDiv(3)"></span>
+						<span class="mySliderButton" onclick="currentDiv(4)"></span>
+						<span class="mySliderButton" onclick="currentDiv(5)"></span>
+					</div>
+
+					<div class="clear"> </div>
+				</main>
+			</div>
 			<div class="clear"> </div>
 			<!-- SLUT main -->
 

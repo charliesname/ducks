@@ -111,7 +111,6 @@ function showDivs(n, s) {
 	x[ci].style.zIndex = "1";
 	
 	slideTimer = 0;
-	document.getElementById("sliderTimer").style.width = "0";
 }
 
 function sliderTimerFunction() {
@@ -126,7 +125,6 @@ function sliderTimerFunction() {
 			slideIndexPre = slideIndex;
 			showDivs(slideIndex += 1, "l");
 		}
-		document.getElementById("sliderTimer").style.width = slideTimer / (timePerSlide / 100) + "%";
 	}
 	setTimeout(sliderTimerFunction, 25);
 }
