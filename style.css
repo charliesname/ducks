@@ -311,24 +311,7 @@ ul.topnav li.vagn a:hover, ul.topnav li.vagn a.active {
 	background-image: url(" images/shopping_cart.png"), linear-gradient(#262, #131);
 }
 
-#vagn2 {
-	float: right;
-	margin-right: 5px;
-	margin-bottom: 1px;
-	float: right;
-	background-color: #262;
-	background-image: url(" images/shopping_cart.png"), linear-gradient(#262, #131);
-}
-#vagn2 a {
-	width: 20px;
-	background-color: #393;
-	background-image: url(" images/shopping_cart.png"), linear-gradient(#393, #262);
-	background-size: 35px 35px, 100%;
-	background-position: center;
-	background-repeat: no-repeat;
-	box-shadow: inset 0 0 5px #ddd;
 
-}
 ul.topnav li.vagn2 a:hover, ul.topnav li.vagn2 a.active {
 	background-color: #262;
 	background-image: url(" images/shopping_cart.png"), linear-gradient(#262, #131);
@@ -771,6 +754,9 @@ footer #tryggehandel img {
 		width: 100%;
 		padding: 0px;
 		border-radius: 0px;
+	}
+	#head-kundvagn {
+		display: none;
 	}
 	#head-search {
 	width: 50%;
