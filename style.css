@@ -716,9 +716,7 @@ footer #tryggehandel img {
 		padding: 0px;
 		border-radius: 0px;
 	}
-	#head-kundvagn {
-		display: none;
-	}
+
 	#head-search {
 	width: 50%;
 	background-color: #FFFFFF;
@@ -817,11 +815,15 @@ footer #tryggehandel img {
 }
 
 @media screen and (max-width: 360px) {
-
+	#head-search {
+		text-align: left;
+	}
 	#head-left {margin: 0 auto;}
-	.head-logo.left {display: none}
 	.main-item {
 		width: 99%;
+	}
+	#head-kundvagn {
+		clear: both;
 	}
 	h1 {
 		font-size: 1.2em;
