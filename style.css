@@ -52,7 +52,6 @@ input[type="image"] {
 ul.topnav li.left a,
 ul.topnav li.right a,
 #head-kundvagn,
-#bread-crumbs a,
 .main-item div,
 #produkt-item .buyButton,
 #produkt-item .buyButtonRemove,
@@ -70,7 +69,6 @@ ul.topnav li.right a:hover,
 ul.topnav li.right a.active,
 #head-kundvagn a:hover,
 #head-kundvagn a.active,
-#bread-crumbs a:hover,
 .main-item div:hover,
 #produkt-item div:hover,
 #produkt-item .buyButtonRemove:hover,
@@ -364,17 +362,23 @@ ul.topnav li.vagn2 a:hover, ul.topnav li.vagn2 a.active {
 }
 
 #bread-crumbs li {
-	font-size: 14px;
+	font-size: 12px;
 	float: left;
 	margin-top: 8px;
-	margin-right: 5px;
+	margin-right: 2px;
 }
 
 #bread-crumbs a {
-	display: block;
-	padding:5px 15px 5px 10px;
+	padding:5px 2px 5px 0px;
 	text-decoration: none;
 	border-radius: 3px 15px 15px 3px;
+	color: #666666;
+}
+#bread-crumbs a:hover {
+	color: #333333;
+}
+#bread-crumbs span {
+	font-size: 14px;
 }
 
 #lang-div {
@@ -405,7 +409,7 @@ ul.topnav li.vagn2 a:hover, ul.topnav li.vagn2 a.active {
 #left-nav {
 	float: left;
 	width: 150px;
-	
+
 	margin-top: 5px;
 	background-color: #ddd;
 	padding: 2px 0 2px 2px;
@@ -421,7 +425,7 @@ ul.topnav li.vagn2 a:hover, ul.topnav li.vagn2 a.active {
 	background-color: #ddd;
 	padding: 2px 0 2px 2px;
 	border-radius: 3px;
-	
+
 	margin-left: 155px;
 }
 
@@ -789,8 +793,8 @@ footer #tryggehandel img {
 	#right-main {
 		margin-left: 0px;
 	}
-	
-	
+
+
 	ul.topnav li.left, ul.topnav li.right {
 		float: left;
 		width: 49%;
