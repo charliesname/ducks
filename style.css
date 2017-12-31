@@ -198,7 +198,7 @@ header {
 	background-repeat: no-repeat;
 }
 
-#kundvagn3 {
+#kundvagn {
 	background-color: #f00;
 	color: #fff;
 	position: absolute;
@@ -258,7 +258,7 @@ ul.topnav li.menu a {
 	background: linear-gradient(#393, #262);
 	color: #9f9;
 	box-shadow: inset 0 0 5px #ddd;
-	margin:0px 65px 0px .5%;
+	margin:0px .5% 0px .5%;
 	clear:both
 }
 ul.topnav li.menu a:hover, ul.topnav li.menu a.active {
@@ -287,6 +287,7 @@ ul.topnav li.sok input[type="image"] {
 	height:20px;
 }
 
+<<<<<<< HEAD
 /* Ska tas bort om kundvagn när kundvagnen helt är flyttad till headern */
 
 ul.topnav li.vagn {
@@ -340,6 +341,8 @@ ul.topnav li.vagn2 a:hover, ul.topnav li.vagn2 a.active {
 	border-radius: 10px;
 }
 
+=======
+>>>>>>> efbca092c2a80ae79958d52647b7121cccc904b5
 #bread-crumbs ul {
 	list-style-type: none;
 }
@@ -817,12 +820,13 @@ footer #tryggehandel img {
 }
 @media screen and (max-width: 520px) {
 	#head-search {
-	width: 100%;
-	background-color: #444;
-	border-radius: 0px;
-	padding: 10px;
-	display: table;
-	margin: 0 auto;
+		width: 85%;
+		background-color: transparent;
+		border-radius: 0px;
+		padding: 10px;
+		display: table;
+		margin: 0 auto;
+		margin-right: 150px;
 	}
 	#head-left {
 		text-align: left;
