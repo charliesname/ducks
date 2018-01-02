@@ -388,7 +388,7 @@ ul.topnav li.sok input[type="image"] {
 
 #right-main {
 	margin-top: 5px;
-	background-color: #ddd;
+	background-color: #f1f1f1;
 	padding: 2px 0 2px 2px;
 	border-radius: 3px;
 
@@ -551,16 +551,23 @@ main:not(#right-main) {
 	margin-right: 19px;
 }
 
+
 footer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
 	background-color: #444;
 	color: #fff;
-	width: 1200px;
-	height: 130px;
-	margin: 5px 0;
+	max-width: 1200px;
+	/*height: 180px;*/
+	margin: 8px;
 	padding: 15px;
 	border-radius: 3px;
 }
-
+footer div {
+	width: 140px;
+	padding-top: 20px;
+}
 footer a {
 	color: #fff;
 	text-decoration: none;
@@ -568,34 +575,23 @@ footer a {
 footer a:hover {
 	color: #ff0;
 }
-
-footer #servicelankar {
-	float: left;
-	margin-left: 7%;
+footer .title {
+	font-weight: bold;
+	font-size: 1.2em;
+	margin-bottom: 5px;
 }
-
-footer #partners, footer #tryggehandel {
-	float: right;
-}
-footer #partners .img1 {
-	margin-top: 25px;
+footer #betalning .img1, footer #frakt .img1 {
+	display: block;
+	margin-top: 0px;
 	width: 100px;
 	height: auto;
 }
-footer #partners .img2 {
+footer #betalning .img2, footer #frakt .img2 {
 	width: 50px;
 	height: auto;
 }
-.partnersplit1, .partnersplit2, .partnersplit3 {
-	display: none;
-}
-
-footer #tryggehandel {
-	margin-left: 15%;
-}
-
 footer #tryggehandel img {
-	margin-top: 0px;
+    margin-top: 10px;
 	margin-right: 0px;
 	width: 100px;
 	height: auto;
@@ -728,6 +724,34 @@ footer #tryggehandel img {
 	color: #ff0;
 }
 
+.produkt-info {
+	width: 100%;
+	height: auto;
+	float: left;
+	margin: 0 auto;
+	background-color: #f1f1f1;
+	padding-bottom: 12px;
+}
+.produkt-info-left {
+width: 400px;
+display:inline-block;
+}
+
+.produkt-info-right {
+width: 400px;
+display:inline-block;
+}
+.produktbild_produktsida {
+  height: 300px;
+  display:inline-block;
+	border: 1px solid #666666;
+}
+.produkt-info-right .pris {
+	font-size: 1.1em;
+	font-variant: small-caps;
+
+}
+
 @media screen and (max-width: 1200px) {
 	#container {width: 99%;}
 	#main-nav, footer { width: 100%; }
@@ -820,6 +844,13 @@ footer #tryggehandel img {
 	}
 	footer #tryggehandel {
 		margin-left: 15%;
+	}
+	.produkt-info-left {
+	max-width: 100%;
+	}
+
+	.produkt-info-right {
+	max-width: 100%;
 	}
 }
 @media screen and (max-width: 520px) {
