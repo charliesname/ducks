@@ -634,95 +634,8 @@ footer #tryggehandel img {
 	font-size: 30px;
 }
 
-.kundvagn-item {
-	height: 25px;
-}
 
-.kundvagn-item1 {
-	background-color: #fff;
-}
-.kundvagn-item2 {
-	background-color: #ddd;
-}
-
-.kundvagn-item .r1 {
-	width: 25px;
-}
-.kundvagn-item .r2 {
-	width: 25px;
-}
-.kundvagn-item .r3 {
-	width: 25px;
-}
-.kundvagn-item .r4 {
-	width: 25px;
-}
-.kundvagn-item .r5 {
-	width: 25px;
-}
-.kundvagn-item .r6 {
-	width: 25px;
-}
-
-.kundvagn-item {
-	background-color: #ccc;
-	float: left;
-	width: 32.33333%;
-	margin: 5px .5%;
-	border-radius: 3px;
-}
-
-.kundvagn-item1 {
-	width: 110px;
-	float:left;
-}
-.kundvagn-item1 img {
-	/*margin: 5px;*/
-	float: left;
-	width: 100px;
-	height: 100px;
-	border-radius: 3px 0 0 3px;
-}
-
-.kundvagn-item2 {
-	float:left;
-}
-.kundvagn-item2 h3, .kundvagn-item1 p {
-	margin-top: 5px;
-}
-
-.kundvagn-item3 {
-	width: 80px;
-	float:right;
-}
-.kundvagn-item3 div {
-	text-align: center;
-	cursor: pointer;
-	margin: 5px;
-	padding: 10px 12px;
-	font-size: 14px;
-	border-radius: 2px;
-}
-
-#bestall {
-	background-color: #ccc;
-	padding: 10px;
-	margin: 5px;
-	border-radius: 3px;
-}
-
-#bestall p span {
-	color: #c00;
-	font-size: 20px;
-}
-
-#bestall a {
-	color: #fff;
-	text-decoration: none;
-}
-#bestall a:hover {
-	color: #ff0;
-}
+/* PRODUKTSIDA */
 
 .produkt-info {
 	width: 100%;
@@ -752,6 +665,86 @@ display:inline-block;
 
 }
 
+/* KUNDVAGN */
+
+#kundvagn-items {
+	margin: 25px;
+}
+
+.kundvagn-item {
+	height: 27px;
+}
+.kundvagn-item div {
+	line-height: 27px;
+}
+.kundvagn-item-head {
+	border-radius: 3px 3px 0 0;
+	background-color: #bbb;
+}
+.kundvagn-item1 {
+	background-color: #eee;
+}
+.kundvagn-item2 {
+	background-color: #ddd;
+}
+.kundvagn-item-foot {
+	height: 10px;
+	border-radius: 0 0 3px 3px;
+	background-color: #bbb;
+}
+
+.kundvagn-item div {
+	float: left;
+}
+
+
+.kundvagn-item .r1 {
+	width: 35px;
+}
+.kundvagn-item .r1 img {
+	float: left;
+	border-radius: 3px;
+	padding: 0;
+	margin: 2px 5px;
+	width: 23px;
+	height: 23px;
+}
+.kundvagn-item .r2 {
+	width: 200px;
+}
+.kundvagn-item .r3 {
+	width: 100px;
+}
+.kundvagn-item .r4 {
+	width: 100px;
+}
+.kundvagn-item .r5 {
+	width: 100px;
+}
+.kundvagn-item .r6 {
+	width: 100px;
+}
+
+#bestall {
+	background-color: #ccc;
+	padding: 10px;
+	margin: 5px;
+	border-radius: 3px;
+}
+
+#bestall p span {
+	color: #c00;
+	font-size: 20px;
+}
+
+#bestall a {
+	color: #fff;
+	text-decoration: none;
+}
+#bestall a:hover {
+	color: #ff0;
+}
+
 @media screen and (max-width: 1200px) {
 	#container {width: 99%;}
 	#main-nav, footer { width: 100%; }
@@ -767,14 +760,8 @@ display:inline-block;
 	.main-item {
 		width: 24%;
 	}
-	.kundvagn-item {
-		width: 49%
-	}
 	footer #partners .img1 {
 		margin-top: 0;
-	}
-	.partnersplit2 {
-		display: block
 	}
 }
 @media screen and (max-width: 760px) {
@@ -785,12 +772,12 @@ display:inline-block;
 	}
 
 	#head-search {
-	width: 50%;
-	background-color: #FFFFFF;
-  border-radius: 10px 10px 0px 0px;
-	padding: 10px;
-	display: table;
-	margin: 0 auto;
+		width: 50%;
+		background-color: #FFFFFF;
+		border-radius: 10px 10px 0px 0px;
+		padding: 10px;
+		display: table;
+		margin: 0 auto;
 	}
 	#head-search input[type=text] {
 		width: 90%;
@@ -806,11 +793,11 @@ display:inline-block;
 		margin-left: 0px;
 	}
 	.flex-produkter {
-	  margin-top: 30px;
-	  display:flex;
-	  flex-wrap: wrap;
+		margin-top: 30px;
+		display:flex;
+		flex-wrap: wrap;
 		justify-content: center;
-	  background-color: #FFFFFF;
+		background-color: #FFFFFF;
 	}
 	ul.topnav li.left, ul.topnav li.right {
 		float: left;
@@ -820,9 +807,6 @@ display:inline-block;
 	#head-right {
 		display: none
 	}
-	.kundvagn-item {
-		width: 99%;
-	}
 	.main-item {
 		width: 32%;
 	}
@@ -830,27 +814,11 @@ display:inline-block;
 		font-size: 1.5em;
 		margin-top: 1px
 	}
-	footer #partners .img1 {
-		width: 70px;
-	}
-	footer #partners .img2 {
-		width: 35px;
-	}
-	.partnersplit1 {
-		display: block;
-	}
-	.partnersplit2 {
-		display: none
-	}
-	footer #tryggehandel {
-		margin-left: 15%;
-	}
 	.produkt-info-left {
-	max-width: 100%;
+		max-width: 100%;
 	}
-
 	.produkt-info-right {
-	max-width: 100%;
+		max-width: 100%;
 	}
 }
 @media screen and (max-width: 520px) {
@@ -872,24 +840,6 @@ display:inline-block;
 	.head-logo.right {display: none}
 	.main-item {
 		width: 49%;
-	}
-	footer #servicelankar {
-		margin-left: 0px;
-	}
-	footer #tryggehandel {
-		margin-left: 5%;
-	}
-	footer {
-		height: auto;
-	}
-	.partnersplit1 {
-		display: none;
-	}
-	.partnersplit2 {
-		display: none;
-	}
-	.partnersplit3 {
-		display: block;
 	}
 }
 
