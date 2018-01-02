@@ -387,7 +387,7 @@ ul.topnav li.sok input[type="image"] {
 
 #right-main {
 	margin-top: 5px;
-	background-color: #ddd;
+	background-color: #f1f1f1;
 	padding: 2px 0 2px 2px;
 	border-radius: 3px;
 
@@ -693,6 +693,34 @@ footer #tryggehandel img {
 	color: #ff0;
 }
 
+.produkt-info {
+	width: 100%;
+	height: auto;
+	float: left;
+	margin: 0 auto;
+	background-color: #f1f1f1;
+	padding-bottom: 12px;
+}
+.produkt-info-left {
+width: 400px;
+display:inline-block;
+}
+
+.produkt-info-right {
+width: 400px;
+display:inline-block;
+}
+.produktbild_produktsida {
+  height: 300px;
+  display:inline-block;
+	border: 1px solid #666666;
+}
+.produkt-info-right .pris {
+	font-size: 1.1em;
+	font-variant: small-caps;
+
+}
+
 @media screen and (max-width: 1200px) {
 	#container {width: 99%;}
 	#main-nav, footer { width: 100%; }
@@ -785,6 +813,13 @@ footer #tryggehandel img {
 	}
 	footer #tryggehandel {
 		margin-left: 15%;
+	}
+	.produkt-info-left {
+	max-width: 100%;
+	}
+
+	.produkt-info-right {
+	max-width: 100%;
 	}
 }
 @media screen and (max-width: 520px) {
