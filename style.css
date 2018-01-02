@@ -550,16 +550,23 @@ main:not(#right-main) {
 	margin-right: 19px;
 }
 
+
 footer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
 	background-color: #444;
 	color: #fff;
-	width: 1200px;
-	height: 130px;
+	max-width: 1200px;
+	/*height: 180px;*/
 	margin: 5px 0;
 	padding: 15px;
 	border-radius: 3px;
 }
-
+footer div {
+	width: 120px;
+	padding-top: 20px;
+}
 footer a {
 	color: #fff;
 	text-decoration: none;
@@ -567,34 +574,22 @@ footer a {
 footer a:hover {
 	color: #ff0;
 }
-
-footer #servicelankar {
-	float: left;
-	margin-left: 7%;
+footer .title {
+	font-weight: bold;
+	margin-bottom: 5px;
 }
-
-footer #partners, footer #tryggehandel {
-	float: right;
-}
-footer #partners .img1 {
-	margin-top: 25px;
+footer #betalning .img1, footer #frakt .img1 {
+	display: block;
+	margin-top: 0px;
 	width: 100px;
 	height: auto;
 }
-footer #partners .img2 {
+footer #betalning .img2, footer #frakt .img2 {
 	width: 50px;
 	height: auto;
 }
-.partnersplit1, .partnersplit2, .partnersplit3 {
-	display: none;
-}
-
-footer #tryggehandel {
-	margin-left: 15%;
-}
-
 footer #tryggehandel img {
-	margin-top: 0px;
+    margin-top: 10px;
 	margin-right: 0px;
 	width: 100px;
 	height: auto;
