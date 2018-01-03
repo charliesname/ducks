@@ -660,6 +660,9 @@ display:inline-block;
 .produktbild_produktsida {
   height: 300px;
   display:inline-block;
+
+}
+.produktbild_produktsida img {
 	border: 1px solid #666666;
 }
 .produkt-info-right .pris {
@@ -667,9 +670,23 @@ display:inline-block;
 	font-variant: small-caps;
 
 }
+/* kundvagnsknappen produktsida */
+.produkt-info-right input[type=text] {
+		text-align: right;
+}
 
-
-
+.produkt-info-right input[type=submit] {
+	font-size: 16px;
+	padding: 5px 10px;
+	border: 0;
+	border-radius: 3px;
+	box-shadow: inset 0 0 3px #444;
+	margin: 0 20px;
+	cursor: pointer;
+}
+.produkt-info-right input[type=submit]:hover {
+		background-color: #009900;
+}
 
 /* KUNDVAGN */
 
