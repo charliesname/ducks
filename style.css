@@ -8,6 +8,7 @@
 .fr {float: right}
 
 .mt10 {margin-top: 10px;}
+.mt15 {margin-top: 15px;}
 
 .noselect {
 	/*user-select: none;*/
@@ -221,16 +222,26 @@ main h1 {
 	background-size: 35px 35px, 100%;
 	background-position: center;
 	background-repeat: no-repeat;
+<<<<<<< HEAD
 	/*box-shadow: inset 0 0 5px #ddd;*/
+=======
+	box-shadow: inset 0 0 5px #bbb;
+>>>>>>> 6adb994a39c3faabd167191bbcf67216aba50822
 	margin: 0px .5% 0px .5%;
 	clear:both
 }
 #head-kundvagn a:hover, #head-kundvagn a.active {
+<<<<<<< HEAD
 	background-color: #262;
 	background-image: url(" images/shopping_cart.png"), linear-gradient(#393, #fff);
+=======
+	background-color: #4f4;
+	background-image: url(" images/shopping_cart.png"), linear-gradient(#4c4, #282);
+>>>>>>> 6adb994a39c3faabd167191bbcf67216aba50822
 	background-size: 35px 35px, 100%;
 	background-position: center;
 	background-repeat: no-repeat;
+	box-shadow: inset 0 0 5px #bbb, 0 0 10px #888;
 }
 
 #kundvagn {
@@ -389,10 +400,9 @@ ul.topnav li.sok input[type="image"] {
 
 #right-main {
 	margin-top: 5px;
-	background-color: #ddd;
+	background-color: #f1f1f1;
 	padding: 2px 0 2px 2px;
 	border-radius: 3px;
-
 	margin-left: 155px;
 }
 
@@ -457,21 +467,21 @@ main:not(#right-main) {
 }
 
 @keyframes fadeInLeft {
-    0% {left: -800px}
+    0% {left: 800px}
     100% {left: 0px}
 }
 @keyframes fadeOutRight {
     0% {left: 0px}
-    100% {left: 800px}
+    100% {left: -800px}
 }
 
 @keyframes fadeInRight {
-    0% {left: 800px}
+	0% {left: -800px}
     100% {left: 0px}
 }
 @keyframes fadeOutLeft {
-    0% {left: 0px}
-    100% {left: -800px}
+	0% {left: 0px}
+    100% {left: 800px}
 }
 
 
@@ -552,16 +562,23 @@ main:not(#right-main) {
 	margin-right: 19px;
 }
 
+
 footer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
 	background-color: #444;
 	color: #fff;
-	width: 1200px;
-	height: 130px;
-	margin: 5px 0;
+	max-width: 1200px;
+	/*height: 180px;*/
+	margin: 8px;
 	padding: 15px;
 	border-radius: 3px;
 }
-
+footer div {
+	width: 140px;
+	padding-top: 20px;
+}
 footer a {
 	color: #fff;
 	text-decoration: none;
@@ -569,38 +586,30 @@ footer a {
 footer a:hover {
 	color: #ff0;
 }
-
-footer #servicelankar {
-	float: left;
-	margin-left: 7%;
+footer .title {
+	font-weight: bold;
+	font-size: 1.2em;
+	margin-bottom: 5px;
 }
-
-footer #partners, footer #tryggehandel {
-	float: right;
-}
-footer #partners .img1 {
-	margin-top: 25px;
+footer #betalning .img1, footer #frakt .img1 {
+	display: block;
+	margin-top: 0px;
 	width: 100px;
 	height: auto;
 }
-footer #partners .img2 {
+footer #betalning .img2, footer #frakt .img2 {
 	width: 50px;
 	height: auto;
 }
-.partnersplit1, .partnersplit2, .partnersplit3 {
-	display: none;
-}
-
-footer #tryggehandel {
-	margin-left: 15%;
-}
-
 footer #tryggehandel img {
-	margin-top: 0px;
+    margin-top: 10px;
 	margin-right: 0px;
 	width: 100px;
 	height: auto;
 }
+
+
+
 
 #produkt-item {
 	width: 50%;
@@ -639,56 +648,167 @@ footer #tryggehandel img {
 	font-size: 30px;
 }
 
-.kundvagn-item {
-	background-color: #ccc;
+
+/* PRODUKTSIDA */
+
+.produkt-info {
+	width: 100%;
+	height: auto;
 	float: left;
-	width: 32.33333%;
-	margin: 5px .5%;
+	margin: 0 auto;
+	background-color: #f1f1f1;
+	padding-bottom: 12px;
+}
+.produkt-info-left {
+width: 400px;
+display:inline-block;
+}
+
+.produkt-info-right {
+width: 400px;
+display:inline-block;
+}
+.produktbild_produktsida {
+  height: 300px;
+  display:inline-block;
+
+}
+.produktbild_produktsida img {
+	border: 1px solid #666666;
+}
+.produkt-info-right .pris {
+	font-size: 1.1em;
+	font-variant: small-caps;
+
+}
+/* kundvagnsknappen produktsida */
+.produkt-info-right input[type=text] {
+		text-align: right;
+}
+
+.produkt-info-right input[type=submit] {
+	font-size: 16px;
+	padding: 5px 10px;
+	border: 0;
 	border-radius: 3px;
-}
-
-.kundvagn-item1 {
-	width: 110px;
-	float:left;
-}
-.kundvagn-item1 img {
-	/*margin: 5px;*/
-	float: left;
-	width: 100px;
-	height: 100px;
-	border-radius: 3px 0 0 3px;
-}
-
-.kundvagn-item2 {
-	float:left;
-}
-.kundvagn-item2 h3, .kundvagn-item1 p {
-	margin-top: 5px;
-}
-
-.kundvagn-item3 {
-	width: 80px;
-	float:right;
-}
-.kundvagn-item3 div {
-	text-align: center;
+	box-shadow: inset 0 0 3px #444;
+	margin: 0 20px;
 	cursor: pointer;
-	margin: 5px;
-	padding: 10px 12px;
-	font-size: 14px;
-	border-radius: 2px;
+}
+.produkt-info-right input[type=submit]:hover {
+		background-color: #009900;
+}
+
+/* KUNDVAGN */
+
+#kundvagn-items {
+	margin: 5px 2.5% 0 2.5%;
+}
+
+#kundvagn-items a {
+	color: #262;
+}
+#kundvagn-items a:hover {
+	color: #393;
+}
+
+.kundvagn-item {
+	height: 27px;
+}
+.kundvagn-item div {
+	line-height: 27px;
+}
+.kundvagn-item-head {
+	border-radius: 3px 3px 0 0;
+	background-color: #ddd;
+	font-weight: bold;
+}
+.kundvagn-item1 {
+	background-color: #f9f9f9;
+	border-left: 4px solid #ddd;
+	border-right: 4px solid #ddd;
+}
+.kundvagn-item2 {
+	background-color: #f0f0f0;
+	border-left: 4px solid #ddd;
+	border-right: 4px solid #ddd;
+}
+.kundvagn-item-foot {
+	height: 10px;
+	border-radius: 0 0 3px 3px;
+	background-color: #ddd;
+}
+
+.kundvagn-item div {
+
+}
+
+
+.kundvagn-item .r1 {
+	float: left;
+	width: 35px;
+}
+.kundvagn-item .r1 img {
+	float: left;
+	border-radius: 3px;
+	padding: 0;
+	margin: 2px 5px;
+	width: 23px;
+	height: 23px;
+}
+
+.kundvagn-item .r2 {
+	float: left;
+}
+.kundvagn-item .r3 {
+	float: right;
+	text-align: right;
+	width: 18%;
+}
+.kundvagn-item .r4 {
+	float: right;
+	text-align: right;
+	width: 18%;
+}
+.kundvagn-item .r5 {
+	float: right;
+	text-align: right;
+	width: 18%;
+}
+.kundvagn-item .r6 {
+	margin-right: 5px;
+	float: right;
+	text-align: right;
+	width: 18%;
+}
+
+#kundvagn-info {
+	margin: 10px 0 10px 2.5%;
+	float: left;
+}
+
+#kundvagn-pris {
+	margin: 10px 2.5% 10px 0;
+	text-align: right;
+	float: right;
+	height: 65px;
+}
+#kundvagn-pris p {
+	margin: 0;
+	padding: 0;
 }
 
 #bestall {
-	background-color: #ccc;
+	background-color: #ddd;
 	padding: 10px;
-	margin: 5px;
+	margin: 5px 2.5%;
 	border-radius: 3px;
 }
 
 #bestall p span {
 	color: #c00;
 	font-size: 20px;
+	font-weight: bold;
 }
 
 #bestall a {
@@ -697,6 +817,27 @@ footer #tryggehandel img {
 }
 #bestall a:hover {
 	color: #ff0;
+}
+
+#bestall input[type=submit] {
+	cursor: pointer;
+	padding: 10px 25px;
+	font-size: 1.2em;
+	border: 0;
+	border-radius: 3px;
+	background-color: #666;
+	background: linear-gradient(#666, #333);
+	color: #eee;
+	box-shadow: inset 0 0 5px #ddd;
+}
+#bestall input[type=submit]:hover {
+	background-color: #393;
+	background: linear-gradient(#393, #262);
+	color: #fff;
+}
+
+.fyranollfyra {
+	color: #DDDD00;
 }
 
 @media screen and (max-width: 1200px) {
@@ -714,14 +855,8 @@ footer #tryggehandel img {
 	.main-item {
 		width: 24%;
 	}
-	.kundvagn-item {
-		width: 49%
-	}
 	footer #partners .img1 {
 		margin-top: 0;
-	}
-	.partnersplit2 {
-		display: block
 	}
 }
 @media screen and (max-width: 760px) {
@@ -732,16 +867,17 @@ footer #tryggehandel img {
 	}
 
 	#head-search {
-	width: 50%;
-	background-color: #FFFFFF;
-  border-radius: 10px 10px 0px 0px;
-	padding: 10px;
-	display: table;
-	margin: 0 auto;
+		width: 50%;
+		background-color: #FFFFFF;
+		border-radius: 10px 10px 0px 0px;
+		padding: 10px;
+		display: table;
+		margin: 0 auto;
 	}
 	#head-search input[type=text] {
-		width: 90%;
-		margin: 0 auto;
+		width: 70%;
+		margin: 0;
+
 	}
 	.nomobile {
 		display: none
@@ -753,11 +889,11 @@ footer #tryggehandel img {
 		margin-left: 0px;
 	}
 	.flex-produkter {
-	  margin-top: 30px;
-	  display:flex;
-	  flex-wrap: wrap;
+		margin-top: 30px;
+		display:flex;
+		flex-wrap: wrap;
 		justify-content: center;
-	  background-color: #FFFFFF;
+		background-color: #FFFFFF;
 	}
 	ul.topnav li.left, ul.topnav li.right {
 		float: left;
@@ -767,9 +903,6 @@ footer #tryggehandel img {
 	#head-right {
 		display: none
 	}
-	.kundvagn-item {
-		width: 99%;
-	}
 	.main-item {
 		width: 32%;
 	}
@@ -777,21 +910,13 @@ footer #tryggehandel img {
 		font-size: 1.5em;
 		margin-top: 1px
 	}
-	footer #partners .img1 {
-		width: 70px;
+	.produkt-info-left {
+		max-width: 100%;
 	}
-	footer #partners .img2 {
-		width: 35px;
+	.produkt-info-right {
+		max-width: 100%;
 	}
-	.partnersplit1 {
-		display: block;
-	}
-	.partnersplit2 {
-		display: none
-	}
-	footer #tryggehandel {
-		margin-left: 15%;
-	}
+
 }
 @media screen and (max-width: 520px) {
 	#head-search {
@@ -813,29 +938,22 @@ footer #tryggehandel img {
 	.main-item {
 		width: 49%;
 	}
-	footer #servicelankar {
-		margin-left: 0px;
+	.kundvagn-item .r3 {
+		display: none
 	}
-	footer #tryggehandel {
-		margin-left: 5%;
+	.kundvagn-item .r2 {
+		width: 1px;
 	}
-	footer {
-		height: auto;
+	.kundvagn-item .r6 {
+		width: 70px;
 	}
-	.partnersplit1 {
-		display: none;
-	}
-	.partnersplit2 {
-		display: none;
-	}
-	.partnersplit3 {
-		display: block;
-	}
+
 }
 
 @media screen and (max-width: 360px) {
 	#head-search {
 		text-align: left;
+		margin: 10px;
 	}
 	#head-left {margin: 0 auto;}
 	.main-item {
@@ -844,7 +962,28 @@ footer #tryggehandel img {
 	#head-kundvagn {
 		clear: both;
 	}
+
 	h1 {
 		font-size: 1.2em;
+	}
+	.kundvagn-item .r5 {
+		display: none
+	}
+}
+
+@media print {
+	header, nav, #lang-div, #left-nav, #kundvagn-info, #bestall, footer, #htmlcssvalid  {
+		display: none;
+	}
+	h1 {
+		font-size: 1.5em;
+	}
+	#right-main {
+		background: #fff;
+		width: 1000px;
+		margin: 0;
+	}
+	.kundvagn-item1, .kundvagn-item2 {
+		background-color: #fff;
 	}
 }
