@@ -825,6 +825,10 @@ display:inline-block;
 	color: #fff;
 }
 
+.fyranollfyra {
+	color: #DDDD00;
+}
+
 @media screen and (max-width: 1200px) {
 	#container {width: 99%;}
 	#main-nav, footer { width: 100%; }
