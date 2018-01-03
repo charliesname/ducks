@@ -24,7 +24,7 @@ function setLanguage(a) {
 			break;
 			
 		case "en":
-			alert("Languages have been changed to English.");
+			alert("Language have been changed to English.");
 			break;
 	}
 }
