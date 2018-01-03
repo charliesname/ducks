@@ -394,7 +394,7 @@ ul.topnav li.sok input[type="image"] {
 	border-radius: 3px;
 	margin-left: 155px;
 }
- 
+
 
 main:not(#right-main) {
 	width: 100%;
@@ -712,7 +712,7 @@ display:inline-block;
 }
 
 .kundvagn-item div {
-	
+
 }
 
 
@@ -842,8 +842,9 @@ display:inline-block;
 		margin: 0 auto;
 	}
 	#head-search input[type=text] {
-		width: 90%;
-		margin: 0 auto;
+		width: 70%;
+		margin: 0;
+		padding-left: 40px;
 	}
 	.nomobile {
 		display: none
@@ -912,6 +913,11 @@ display:inline-block;
 	.kundvagn-item .r6 {
 		width: 70px;
 	}
+	#head-search input[type=text] {
+		width: 50%;
+		margin: 0;
+		padding-left: 50px;
+	}
 }
 
 @media screen and (max-width: 360px) {
@@ -925,6 +931,7 @@ display:inline-block;
 	#head-kundvagn {
 		clear: both;
 	}
+
 	h1 {
 		font-size: 1.2em;
 	}
