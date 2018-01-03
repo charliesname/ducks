@@ -7,7 +7,6 @@
 		<link rel="stylesheet" type="text/css" href="../style.css">
 		<link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
 		<script src="../js.js"></script>
-		<script src="../slider.js"></script>
 	</head>
 	<body>
 		<div id="container">
@@ -34,7 +33,7 @@
 				  </form>
 					</div>
 				</div>
-				<div id="head-kundvagn"><a class="active" href=" " ><span id="kundvagn">0</span>&nbsp;</a></div>
+				<div id="head-kundvagn"><a class="active" href="../kundvagn/" ><span id="kundvagn">19</span>&nbsp;</a></div>
 				<div class="clear"> </div>
 			</header>
 			<!-- SLUT header -->
@@ -51,7 +50,7 @@
 					<li class="left"><a href="../superhjaltar/badankor_heros.html">SUPERHJÄLTAR</a></li>
 					<li class="left"><a href="../ovriga/badankor_ovriga.html">ÖVRIGA</a></li>
 					<li class="menu mobile" onclick="topMenu()"><a href="#">| | |</a></li>
-					<li class="vagn mobile"><a href=" " ><span id="kundvagn1">0</span>&nbsp;</a></li>
+					<li class="vagn mobile"><a href="../kundvagn/" ><span id="kundvagn1">0</span>&nbsp;</a></li>
 				</ul>
 			</nav>
 			</form>
@@ -87,98 +86,106 @@
 
 				<main id="right-main">
 					
-					
+					<h1>Kundvagn</h1>
 					<div id="kundvagn-items">
 						<div class="kundvagn-item kundvagn-item-head">
 							<div class="r1">&nbsp;</div>
 							<div class="r2">Produkt</div>
-							<div class="r3">Lager</div>
-							<div class="r4">Antal</div>
-							<div class="r5">Pris</div>
 							<div class="r6">Summa</div>
+							<div class="r5">Pris</div>
+							<div class="r4">Antal</div>
+							<div class="r3">Lager</div>
 						</div>
 						<div class="kundvagn-item kundvagn-item1">
 							<div class="r1"><img src="../images/yrken/systemvetare.jpg" alt="systemvetare"></div>
 							<div class="r2"><a href="../yrken/badanka_systemvetare.html">Systemvetare</a></div>
-							<div class="r3">8st</div>
-							<div class="r4">1</div>
-							<div class="r5">1337kr</div>
-							<div class="r6">1337kr</div>
+							<div class="r6">1337 kr</div>
+							<div class="r5">1337 kr</div>
+							<div class="r4">1 st</div>
+							<div class="r3">8 st</div>
 						</div>
 						<div class="kundvagn-item kundvagn-item2">
 							<div class="r1"><img src="../images/ovriga/dracula.jpg" alt="dracula"></div>
 							<div class="r2"><a href="../ovriga/badanka_dracula.html">Dracula</a></div>
-							<div class="r3">120st</div>
-							<div class="r4">3</div>
-							<div class="r5">37kr</div>
-							<div class="r6">111kr</div>
+							<div class="r6">111 kr</div>
+							<div class="r5">37 kr</div>
+							<div class="r4">3 st</div>
+							<div class="r3">120 st</div>
 						</div>
 						<div class="kundvagn-item kundvagn-item1">
 							<div class="r1"><img src="../images/ovriga/rubix.jpg" alt="rubix"></div>
 							<div class="r2"><a href="../ovriga/badanka_rubix.html">Rubix</a></div>
-							<div class="r3">36st</div>
-							<div class="r4">1</div>
-							<div class="r5">13kr</div>
-							<div class="r6">13kr</div>
+							<div class="r6">65 kr</div>
+							<div class="r5">13 kr</div>
+							<div class="r4">5 st</div>
+							<div class="r3">36 st</div>
 						</div>
 						<div class="kundvagn-item kundvagn-item2">
 							<div class="r1"><img src="../images/superhjaltar/batman.jpg" alt="batman"></div>
 							<div class="r2"><a href="../superhjaltar/badanka_batman.html">Batman</a></div>
-							<div class="r3">25st</div>
-							<div class="r4">10</div>
-							<div class="r5">13kr</div>
-							<div class="r6">130kr</div>
+							<div class="r6">130 kr</div>
+							<div class="r5">13 kr</div>
+							<div class="r4"><span style="color: #c00; text-shadow: 0 0 1px #f00;">10 st</span></div>
+							<div class="r3">8 st</div>
 						</div>
 						<div class="kundvagn-item kundvagn-item-foot"> </div>
-						
-						<p style="margin-top: 15px;">Totalt pris</p>
-						<h3>1591kr</h3>
+					</div>
+					
+					<div id="kundvagn-info">
+						<p><a href="javascript:window.print();">Skriv ut</a></p>
+						<p><a href="#">Skicka till vän</a></p>
+						<p><a href="#">Töm kundvagn</a></p>
+					</div>
+					
+					<div id="kundvagn-pris">
+						<p><em>Frakt: 25 kr</em></p>
+						<p>Totalt pris: &nbsp; <span style="font-size: 1.4em; font-weight: bold;">1668kr</span></p>
 					</div>
 					
 					<div class="clear"> </div>
-					
-					
+
 					<div id="bestall">
-					<form action="bestall.php" method="post">
-						<div class="fl" style="margin-left: 25px">
-							<h3>Kunduppgifter</h3>
-							<p><span>* </span>Förnamn:</p>
-							<input type="text" name="fname">
-							<p><span>* </span>Efternamn:</p>
-							<input type="text" name="ename">
-							<p><span>* </span>Leveransdress:</p>
-							<input type="text" name="address" style="width:240px">
-							<p><span>* </span>Postnummer och <span> * </span>ort:</p>
-							<input type="text" name="zip-code" style="width:60px"> <input type="text" name="city">
-							<p>Mobil:</p>
-							<input type="text" name="cell" style="width:120px">
-							<p><span>* </span>E-postadress:</p>
-							<input type="text" name="mail">
-							<p><span>* </span> <em>Obligatorisk uppgift</em></p>
-						</div>
+						<form action="bestall.php" method="post">
+							<div class="fl" style="margin: 15px;">
+								<h3>Innan du beställer...</h3>
+								<p>Missa inte våra nyheter med extrapris direkt från start!</p>
+								<p>Klicka <a href="../superhjaltar/badankor_heros.html">HÄR</a> för att se produkterna.</p>
+								
+								<h3 class="mt15">Erbjudande</h3>
+								<p>Tillåt oss att skicka erbjudande till er via e-post</p>
+								<p><input type="checkbox" value="ja" name="offers" checked="checked"></p>
 
-						<div class="fl" style="margin-left: 25px">
-							<h3>Erbjudande</h3>
-							<p>Tillåt oss att skicka erbjudande till er via e-post</p>
-							<p><input type="checkbox" value="ja" name="offers" checked="checked"></p>
+								<h3 class="mt15">Betalmetod</h3>
+								<p><input type="radio" name="payment" value="klarna" id="p1"> <label for="p1">Klarna (betala inom 14 dagar)</label></p>
+								<p><input type="radio" name="payment" value="Paypal" id="p2"> <label for="p2">Paypal</label></p>
+								<p><input type="radio" name="payment" value="kredit" id="p3"> <label for="p3">Kreditkort</label></p>
 
-							<h3 class="mt10">Betalmetod</h3>
-							<p><input type="radio" name="payment" value="klarna" id="p1"> <label for="p1">Klarna</label></p>
-							<p><input type="radio" name="payment" value="Paypal" id="p2"> <label for="p2">Paypal</label></p>
-							<p><input type="radio" name="payment" value="kredit" id="p3"> <label for="p3">Kreditkort</label></p>
-
-							<h3 class="mt10">Fraktsätt</h3>
-							<p><input type="radio" name="frakt" value="postnord" id="f1"> <label for="f1">Postnord (till dörr)</label></p>
-							<p><input type="radio" name="frakt" value="swish" id="f2"> <label for="f2">Postnord (till utlämningsställe)</label></p>
-							<p><input type="radio" name="frakt" value="kredit" id="f3"> <label for="f3">DHL (till dörr)</label></p>
-							<p><em>ALL FRAKT ÄR GRATIS</em></p>
-
-							<p class="mt10">Missa inte våra nyheter med extrapris direkt från start!</p>
-							<p>Klicka <a href="/duck/superhjaltar/">HÄR</a> för att se produkterna.</p>
-
-							<input class="fr" type="submit" value="Beställ!">
-						</div>
-					</form>
+								<h3 class="mt15">Fraktsätt</h3>
+								<p><input type="radio" name="frakt" value="postnord" id="f2" checked="checked"> <label for="f2">Postnord (till utlämningsställe, 25 kr)</label></p>
+								<p><input type="radio" name="frakt" value="postnorddorr" id="f1"> <label for="f1">Postnord (till dörr, 99 kr)</label></p>
+								<p><input type="radio" name="frakt" value="dhl" id="f3"> <label for="f3">DHL (till dörr, 99 kr)</label></p>
+							</div>
+							
+							<div class="fl" style="margin: 15px;">
+								<h3>Kunduppgifter</h3>
+								<p><span>* </span>Förnamn:</p>
+								<input type="text" name="fname">
+								<p><span>* </span>Efternamn:</p>
+								<input type="text" name="ename">
+								<p><span>* </span>Leveransdress:</p>
+								<input type="text" name="address" style="width:240px">
+								<p><span>* </span>Postnummer och <span> * </span>ort:</p>
+								<input type="text" name="zip-code" style="width:60px"> <input type="text" name="city">
+								<p>Mobil:</p>
+								<input type="text" name="cell" style="width:120px">
+								<p><span>* </span>E-postadress:</p>
+								<input type="text" name="mail">
+								<p><span>* </span> <em>Obligatorisk uppgift</em></p>
+							</div>
+							
+							<div class="clear"></div>
+							<input type="submit" value="Beställ!">
+						</form>
 					<div class="clear"></div>
 					</div>
 					
@@ -223,7 +230,7 @@
 
 			<!-- W3C logos for valid HTML5 and CSS3 -->
 			<div class="clear"></div>
-			<div style="margin-top: 100px;">
+			<div id="htmlcssvalid" style="margin-top: 100px;">
 				<p>
 				<a href="http://validator.w3.org/check?uri=referer"><img
 				src="http://www.w3.org/html/logo/downloads/HTML5_Logo_64.png"

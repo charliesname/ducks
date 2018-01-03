@@ -8,6 +8,7 @@
 .fr {float: right}
 
 .mt10 {margin-top: 10px;}
+.mt15 {margin-top: 15px;}
 
 .noselect {
 	/*user-select: none;*/
@@ -391,7 +392,6 @@ ul.topnav li.sok input[type="image"] {
 	background-color: #f1f1f1;
 	padding: 2px 0 2px 2px;
 	border-radius: 3px;
-
 	margin-left: 155px;
 }
  
@@ -597,6 +597,9 @@ footer #tryggehandel img {
 	height: auto;
 }
 
+
+
+
 #produkt-item {
 	width: 50%;
 	margin: 10px auto;
@@ -665,10 +668,20 @@ display:inline-block;
 
 }
 
+
+
+
 /* KUNDVAGN */
 
 #kundvagn-items {
-	margin: 25px;
+	margin: 5px 5px 0 5px;
+}
+
+#kundvagn-items a {
+	color: #262;
+}
+#kundvagn-items a:hover {
+	color: #393;
 }
 
 .kundvagn-item {
@@ -679,26 +692,32 @@ display:inline-block;
 }
 .kundvagn-item-head {
 	border-radius: 3px 3px 0 0;
-	background-color: #bbb;
+	background-color: #ddd;
+	font-weight: bold;
 }
 .kundvagn-item1 {
-	background-color: #eee;
+	background-color: #f9f9f9;
+	border-left: 4px solid #ddd;
+	border-right: 4px solid #ddd;
 }
 .kundvagn-item2 {
-	background-color: #ddd;
+	background-color: #f0f0f0;
+	border-left: 4px solid #ddd;
+	border-right: 4px solid #ddd;
 }
 .kundvagn-item-foot {
 	height: 10px;
 	border-radius: 0 0 3px 3px;
-	background-color: #bbb;
+	background-color: #ddd;
 }
 
 .kundvagn-item div {
-	float: left;
+	
 }
 
 
 .kundvagn-item .r1 {
+	float: left;
 	width: 35px;
 }
 .kundvagn-item .r1 img {
@@ -710,23 +729,48 @@ display:inline-block;
 	height: 23px;
 }
 .kundvagn-item .r2 {
-	width: 200px;
+	float: left;
 }
 .kundvagn-item .r3 {
-	width: 100px;
+	float: right;
+	text-align: right;
+	width: 18%;
 }
 .kundvagn-item .r4 {
-	width: 100px;
+	float: right;
+	text-align: right;
+	width: 18%;
 }
 .kundvagn-item .r5 {
-	width: 100px;
+	float: right;
+	text-align: right;
+	width: 18%;
 }
 .kundvagn-item .r6 {
-	width: 100px;
+	margin-right: 5px;
+	float: right;
+	text-align: right;
+	width: 18%;
+}
+
+#kundvagn-info {
+	margin: 10px;
+	float: left;
+}
+
+#kundvagn-pris {
+	margin: 10px;
+	text-align: right;
+	float: right;
+	height: 65px;
+}
+#kundvagn-pris p {
+	margin: 0;
+	padding: 0;
 }
 
 #bestall {
-	background-color: #ccc;
+	background-color: #ddd;
 	padding: 10px;
 	margin: 5px;
 	border-radius: 3px;
@@ -735,6 +779,7 @@ display:inline-block;
 #bestall p span {
 	color: #c00;
 	font-size: 20px;
+	font-weight: bold;
 }
 
 #bestall a {
@@ -743,6 +788,23 @@ display:inline-block;
 }
 #bestall a:hover {
 	color: #ff0;
+}
+
+#bestall input[type=submit] {
+	cursor: pointer;
+	padding: 10px 25px;
+	font-size: 1.2em;
+	border: 0;
+	border-radius: 3px;
+	background-color: #666;
+	background: linear-gradient(#666, #333);
+	color: #eee;
+	box-shadow: inset 0 0 5px #ddd;
+}
+#bestall input[type=submit]:hover {
+	background-color: #393;
+	background: linear-gradient(#393, #262);
+	color: #fff;
 }
 
 @media screen and (max-width: 1200px) {
@@ -841,6 +903,15 @@ display:inline-block;
 	.main-item {
 		width: 49%;
 	}
+	.kundvagn-item .r3 {
+		display: none
+	}
+	.kundvagn-item .r2 {
+		width: 1px;
+	}
+	.kundvagn-item .r6 {
+		width: 70px;
+	}
 }
 
 @media screen and (max-width: 360px) {
@@ -856,5 +927,25 @@ display:inline-block;
 	}
 	h1 {
 		font-size: 1.2em;
+	}
+	.kundvagn-item .r5 {
+		display: none
+	}
+}
+
+@media print {
+	header, nav, #lang-div, #left-nav, #kundvagn-info, #bestall, footer, #htmlcssvalid  {
+		display: none;
+	}
+	h1 {
+		font-size: 1.5em;
+	}
+	#right-main {
+		background: #fff;
+		width: 1000px;
+		margin: 0;
+	}
+	.kundvagn-item1, .kundvagn-item2 {
+		background-color: #fff;
 	}
 }
