@@ -456,21 +456,21 @@ main:not(#right-main) {
 }
 
 @keyframes fadeInLeft {
-    0% {left: -800px}
+    0% {left: 800px}
     100% {left: 0px}
 }
 @keyframes fadeOutRight {
     0% {left: 0px}
-    100% {left: 800px}
+    100% {left: -800px}
 }
 
 @keyframes fadeInRight {
-    0% {left: 800px}
+	0% {left: -800px}
     100% {left: 0px}
 }
 @keyframes fadeOutLeft {
-    0% {left: 0px}
-    100% {left: -800px}
+	0% {left: 0px}
+    100% {left: 800px}
 }
 
 
