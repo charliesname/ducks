@@ -1,24 +1,26 @@
 * {
 	font-family: 'Oswald', sans-serif;
-	/*font-family: 'Acme', sans-serif;*/
 	padding: 0;
 	margin: 0
 }
 
-.fl {float: left}
-.fr {float: right}
+.fl {
+	float: left
+}
+.fr {
+	float: right
+}
 
-.mt10 {margin-top: 10px;}
-.mt15 {margin-top: 15px;}
-
-.noselect {
-	/*user-select: none;*/
+.mt10 {
+	margin-top: 10px;
+}
+.mt15 {
+	margin-top: 15px;
 }
 
 body, html {
 	height: 100%;
 }
-
 body {
 	background-color: #fff;
 }
@@ -49,7 +51,8 @@ input[type="image"] {
 	border: 0;
 }
 
-/* BUTTONS */
+
+/* KNAPPAR */
 #cookies div,
 ul.topnav li.left a,
 ul.topnav li.right a,
@@ -59,9 +62,7 @@ ul.topnav li.right a,
 #produkt-item .buyButtonRemove,
 .kundvagn-item3 div {
 	background-color: #444;
-	/*background: linear-gradient(#666, #333);*/
 	color: #eee;
-	/*box-shadow: inset 0 0 5px #ddd;*/
 }
 
 #cookies div:hover,
@@ -75,8 +76,7 @@ ul.topnav li.right a.active,
 #produkt-item div:hover,
 #produkt-item .buyButtonRemove:hover,
 .kundvagn-item3 div:hover {
-	background-color:#666666;
-	/*background: linear-gradient(#393, #262);*/
+	background-color: #666;
 	color: #fff;
 }
 
@@ -86,12 +86,7 @@ ul.topnav li.right a.active,
 	margin: 0 auto;
 }
 
-h4 {
-	margin-top: -10px;
-	padding: 0;
-	font-size: 3em;
-	text-align:center;
-}
+
 h1 {
 	margin-top: -10px;
 	padding: 0;
@@ -104,45 +99,52 @@ h2 {
 h3 {
 	font-size: 18px;
 }
+h4 {
+	margin-top: -10px;
+	padding: 0;
+	font-size: 3em;
+	text-align:center;
+}
+
 
 header {
 	position: relative;
 }
+
 .flex-produkter {
-  margin-top: 30px;
-  display: flex;
-  flex-wrap: wrap;
-  background-color: #FFFFFF;
+	margin-top: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #fff;
 }
 .child-produkter {
-  background-color: #ffffff;
-  width: 200px;
-  height: 250px;
-  margin: 10px;
-  text-align: left;
-  font-size: 1em;
-  border: 1px solid #f1f1f1;
+	background-color: #fff;
+	width: 200px;
+	height: 250px;
+	margin: 10px;
+	text-align: left;
+	font-size: 1em;
+	border: 1px solid #f1f1f1;
 }
 main a {
 	text-decoration: none;
-	color: #000000;
+	color: #000;
 }
 main a:hover {
 	text-decoration: none;
-	color: #666666;
+	color: #666;
 }
 main h1 {
 	margin-top: 5px;
 	margin-bottom: 5px;
 }
 .produktbild {
-  height: 200px;
-  margin-bottom: 2px;
+	height: 200px;
+	margin-bottom: 2px;
 }
 .produktbild img{
-  max-width: 100%;
-  max-height: 100%;
-
+	max-width: 100%;
+	max-height: 100%;
 }
 #div-head {
 	width: 100%;
@@ -177,7 +179,7 @@ main h1 {
 }
 #head-search {
 	max-width: 100%;
-	 background-color: #FFFFFF;
+	 background-color: #fff;
 	  border-radius: 10px 10px 0px 0px;
 	  padding: 10px;
 	  display: table;
@@ -189,19 +191,21 @@ main h1 {
 #head-serach input[type=text], select {
     padding: 12px 20px;
     margin: 5px 5px;
-    border: 2px solid #ffff33;
+    border: 2px solid #ff3;
     border-radius: 4px;
     box-sizing: border-box;
     background-color: #f1f1f1;
     font-size: 1.2em;
   }
 #head-serach input[type=text]:focus {
-    background-color: #FFFFFF;
+    background-color: #fff;
 }
-
-
-.head-logo.left img {margin-right: 15px}
-.head-logo.right img {margin-left: 15px;}
+.head-logo.left img {
+	margin-right: 15px;
+}
+.head-logo.right img {
+	margin-left: 15px;
+}
 .head-logo img {
 	float: left;
 	height: 90px;
@@ -215,7 +219,6 @@ main h1 {
 	border-radius: 3px;
 }
 #head-kundvagn a {
-
 	display: block;
     color: #333;
     text-align: center;
@@ -244,8 +247,8 @@ main h1 {
 	background-color: #000;
 	color: #fff;
 	position: absolute;
-	right: 42px;
-	bottom: 37px;
+	right: 44px;
+	bottom: 39px;
 	width: 20px;
 	height: 20px;
 	border-radius: 10px;
@@ -281,19 +284,14 @@ ul.topnav li a {
     text-decoration: none;
 	border-radius: 3px;
 }
-
 ul.topnav li.left {
 	float: left;
 	margin-right: 5px;
 }
-
-
 ul.topnav li.right {
 	float: right;
 	margin-right: 5px;
 }
-
-
 ul.topnav li.menu{
 	width: 100%;
 	float: left;
@@ -302,16 +300,13 @@ ul.topnav li.menu a {
 	background-color: #fff;
 	background: #444;
 	color: #000;
-	/*box-shadow: inset 0 0 5px #ddd;*/
 	margin:0px .5% 0px .5%;
 	clear:both
 }
 ul.topnav li.menu a:hover, ul.topnav li.menu a.active {
-	background-color: #666666;
-	/*background: linear-gradient(#000, #131);*/
+	background-color: #666;
 	color: #fff;
 }
-
 ul.topnav li.sok {
 	border-radius: 3px;
 	background: #444;
@@ -321,7 +316,6 @@ ul.topnav li.sok {
 ul.topnav li.sok input {
 	width: 150px;
 }
-
 ul.topnav li.sok input[type="text"] {
 	vertical-align:bottom;
 }
@@ -332,17 +326,16 @@ ul.topnav li.sok input[type="image"] {
 	height:20px;
 }
 
+
 #bread-crumbs ul {
 	list-style-type: none;
 }
-
 #bread-crumbs li {
 	font-size: 12px;
 	float: left;
 	margin-top: 10px;
 	margin-right: 2px;
 }
-
 #bread-crumbs a {
 	padding:5px 2px 5px 10px;
 	text-decoration: none;
@@ -350,11 +343,12 @@ ul.topnav li.sok input[type="image"] {
 	color: #666666;
 }
 #bread-crumbs a:hover {
-	color: #333333;
+	color: #333;
 }
 #bread-crumbs span {
 	font-size: 14px;
 }
+
 
 #lang-div {
 	float: right;
@@ -376,13 +370,11 @@ ul.topnav li.sok input[type="image"] {
 }
 
 
-
 /* Används endast vid sidor som har vänstermeny */
 #nav-main {
 	overflow: hidden;
 	width: 100%;
 }
-
 #left-nav {
 	float: left;
 	width: 150px;
@@ -396,11 +388,12 @@ ul.topnav li.sok input[type="image"] {
 	width: 95px;
 	text-align: left;
 }
-
 #left-nav li {
 	margin-left: 5px;
 }
 
+
+/* MAIN */
 #right-main {
 	margin-top: 5px;
 	background-color: #f1f1f1;
@@ -408,8 +401,6 @@ ul.topnav li.sok input[type="image"] {
 	border-radius: 3px;
 	margin-left: 155px;
 }
-
-
 main:not(#right-main) {
 	width: 100%;
 	float: left;
@@ -419,20 +410,17 @@ main:not(#right-main) {
 	border-radius: 3px;
 }
 
+
+/* SLIDER */
 #mySliderContainer {
 	margin: 10px auto 5px auto;
-	background-color: #fff;
 	max-width: 800px;
 	height: 300px;
 	position: relative;
 	overflow: hidden;
 	border-radius: 3px;
-	border-left: 10px solid #ddd;
-	border-right: 10px solid #ddd;
 }
-
 #mySliderContainer h2 {
-	/*text-align: center;*/
 	color: rgba(0, 0, 0, .75);
 	margin-top: 5px;
 	z-index: 5;
@@ -442,12 +430,10 @@ main:not(#right-main) {
 	width: 100%;
 	margin-left: -165px;
 }
-
 #mySliderMenu {
 	width: 100%;
 	text-align: center;
 }
-
 .mySlides {
 	position: absolute;
 	left: 0px;
@@ -457,7 +443,6 @@ main:not(#right-main) {
 	height: auto;
 	margin: 0 auto;
 }
-
 .mySlides img {
 	width: 800px;
 	height: 300px;
@@ -468,7 +453,6 @@ main:not(#right-main) {
 	top: 0;
 	margin-left: -400px;
 }
-
 @keyframes fadeInLeft {
     0% {left: 800px}
     100% {left: 0px}
@@ -477,7 +461,6 @@ main:not(#right-main) {
     0% {left: 0px}
     100% {left: -800px}
 }
-
 @keyframes fadeInRight {
 	0% {left: -800px}
     100% {left: 0px}
@@ -486,8 +469,6 @@ main:not(#right-main) {
 	0% {left: 0px}
     100% {left: 800px}
 }
-
-
 .mySliderButton {
 	z-index: 3;
 	cursor:pointer;
@@ -495,14 +476,12 @@ main:not(#right-main) {
 	height:12px;
 	width:12px;
 	margin: 0 5px;
-	background-color: rgba(128, 128, 128, .5);
-	/*border: 1px solid rgba(128, 128, 128, .5);*/
+	background-color: #bbb;
 	border-radius: 12px;
 }
 .mySliderButton:hover, .mySliderButtonOn {
 	background-color: #fff;
 }
-
 .mySliderArrow {
 	z-index: 3;
 	box-sizing: inherit;
@@ -518,54 +497,19 @@ main:not(#right-main) {
 	height: 50px;
 	font-size: 50px;
 }
-
-.mySliderArrowLeft {left: 0px;}
-.mySliderArrowRight {right: 0px;}
-
+.mySliderArrowLeft {
+	left: 0px;
+}
+.mySliderArrowRight {
+	right: 0px;
+}
 .mySliderArrow:hover {
 	color: #fff;
 	text-shadow: 0 0 2px #000;
 }
 
-.main-item {
-	color: #333;
-	background-color: #bbb;
-	float: left;
-	width: 19%;
-	margin: 5px .5%;
-	height: 100%;
-	padding: 5px 0;
-	border-radius: 3px;
-}
 
-.main-item h3 {
-	text-align: center;
-}
-.main-item p {
-	text-align: right;
-	margin-right: 5px;
-}
-.main-item img{
-	margin-top: 5px;
-	width: 100%;
-}
-.main-item div {
-	cursor: pointer;
-	margin: 5px;
-	padding: 10px 12px;
-	float:right;
-	font-size: 14px;
-	border-radius: 2px;
-}
-
-.main-item-container {
-	float: left;
-	width: 220px;
-	height: 300px;
-	margin-right: 19px;
-}
-
-
+/* FOTEN */
 footer {
 	display: flex;
 	flex-wrap: wrap;
@@ -612,48 +556,7 @@ footer #tryggehandel img {
 }
 
 
-
-
-#produkt-item {
-	width: 50%;
-	margin: 10px auto;
-}
-
-#produkt-item h3 {
-	padding-top: 10px;
-}
-
-#produkt-item .buyButton, #produkt-item .buyButtonRemove {
-	cursor: pointer;
-	margin: 5px;
-	padding: 10px 12px;
-	float:left;
-	font-size: 14px;
-	border-radius: 2px;
-}
-
-#produkt-item a {
-	text-decoration: none;
-	color: #aa0;
-}
-#produkt-item a:hover {
-	color: #000;
-}
-
-#produkt-item img {
-	border-radius: 3px;
-}
-
-#totalPrisDiv {
-	margin: 10px 20px;
-}
-#totalPris {
-	font-size: 30px;
-}
-
-
 /* PRODUKTSIDA */
-
 .produkt-info {
 	width: 100%;
 	height: auto;
@@ -663,21 +566,19 @@ footer #tryggehandel img {
 	padding-bottom: 12px;
 }
 .produkt-info-left {
-width: 400px;
-display:inline-block;
+	width: 400px;
+	display:inline-block;
 }
-
 .produkt-info-right {
-width: 400px;
-display:inline-block;
+	width: 400px;
+	display:inline-block;
 }
 .produktbild_produktsida {
-  height: 300px;
-  display:inline-block;
-
+	height: 300px;
+	display:inline-block;
 }
 .produktbild_produktsida img {
-	border: 1px solid #666666;
+	border: 1px solid #666;
 }
 .produkt-info-right .pris {
 	font-size: 1.1em;
@@ -686,9 +587,8 @@ display:inline-block;
 }
 /* kundvagnsknappen produktsida */
 .produkt-info-right input[type=text] {
-		text-align: right;
+	text-align: right;
 }
-
 .produkt-info-right input[type=submit] {
 	font-size: 16px;
 	padding: 5px 10px;
@@ -699,22 +599,20 @@ display:inline-block;
 	cursor: pointer;
 }
 .produkt-info-right input[type=submit]:hover {
-		background-color: #009900;
+		background-color: #090;
 }
 
-/* KUNDVAGN */
 
+/* KUNDVAGN */
 #kundvagn-items {
 	margin: 5px 2.5% 0 2.5%;
 }
-
 #kundvagn-items a {
 	color: #262;
 }
 #kundvagn-items a:hover {
 	color: #393;
 }
-
 .kundvagn-item {
 	height: 27px;
 }
@@ -741,12 +639,6 @@ display:inline-block;
 	border-radius: 0 0 3px 3px;
 	background-color: #ddd;
 }
-
-.kundvagn-item div {
-
-}
-
-
 .kundvagn-item .r1 {
 	float: left;
 	width: 35px;
@@ -759,7 +651,6 @@ display:inline-block;
 	width: 23px;
 	height: 23px;
 }
-
 .kundvagn-item .r2 {
 	float: left;
 }
@@ -784,12 +675,10 @@ display:inline-block;
 	text-align: right;
 	width: 18%;
 }
-
 #kundvagn-info {
 	margin: 10px 0 10px 2.5%;
 	float: left;
 }
-
 #kundvagn-pris {
 	margin: 10px 2.5% 10px 0;
 	text-align: right;
@@ -801,19 +690,18 @@ display:inline-block;
 	padding: 0;
 }
 
+/* BESTÄLLNINGSFORMULÄR */
 #bestall {
 	background-color: #ddd;
 	padding: 10px;
 	margin: 5px 2.5%;
 	border-radius: 3px;
 }
-
 #bestall p span {
 	color: #c00;
 	font-size: 20px;
 	font-weight: bold;
 }
-
 #bestall a {
 	color: #fff;
 	text-decoration: none;
@@ -821,7 +709,6 @@ display:inline-block;
 #bestall a:hover {
 	color: #ff0;
 }
-
 #bestall input[type=submit] {
 	cursor: pointer;
 	padding: 10px 25px;
@@ -840,35 +727,34 @@ display:inline-block;
 }
 
 .fyranollfyra {
-	color: #DDDD00;
+	color: #dd0;
 }
 
 @media screen and (max-width: 1200px) {
-	#container {width: 99%;}
-	#main-nav, footer { width: 100%; }
-	.head-logo.right {display: block;}
-	main  { margin: 5px auto 0 auto; }
-	.main-item {
-		width: 19%;
+	#container {
+		width: 99%;
+	}
+	#main-nav, footer {
+		width: 100%;
+	}
+	.head-logo.right {
+		display: block;
+	}
+	main {
+		margin: 5px auto 0 auto;
 	}
 }
 
 @media screen and (max-width: 1000px) {
-
-	.main-item {
-		width: 24%;
-	}
-	footer #partners .img1 {
-		margin-top: 0;
-	}
+	
 }
+
 @media screen and (max-width: 760px) {
 	#div-head {
 		width: 100%;
 		padding: 0px;
 		border-radius: 0px;
 	}
-
 	#head-search {
 		width: 50%;
 		background-color: #FFFFFF;
@@ -919,7 +805,6 @@ display:inline-block;
 	.produkt-info-right {
 		max-width: 100%;
 	}
-
 }
 @media screen and (max-width: 520px) {
 	#head-search {
@@ -936,10 +821,8 @@ display:inline-block;
 		margin: 0;
 		display: inline;
 	}
-
-	.head-logo.right {display: none}
-	.main-item {
-		width: 49%;
+	.head-logo.right {
+		display: none
 	}
 	.kundvagn-item .r3 {
 		display: none
@@ -950,7 +833,6 @@ display:inline-block;
 	.kundvagn-item .r6 {
 		width: 70px;
 	}
-
 }
 
 @media screen and (max-width: 360px) {
@@ -958,14 +840,12 @@ display:inline-block;
 		text-align: left;
 		margin: 10px;
 	}
-	#head-left {margin: 0 auto;}
-	.main-item {
-		width: 99%;
+	#head-left {
+		margin: 0 auto;
 	}
 	#head-kundvagn {
 		clear: both;
 	}
-
 	h1 {
 		font-size: 1.2em;
 	}
