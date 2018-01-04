@@ -805,6 +805,8 @@ footer #tryggehandel img {
 	.produkt-info-right {
 		max-width: 100%;
 	}
+	footer { margin:0;}
+	
 }
 @media screen and (max-width: 520px) {
 	#head-search {
