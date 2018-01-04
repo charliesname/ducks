@@ -412,6 +412,8 @@ main:not(#right-main) {
 
 
 /* SLIDER */
+
+
 #mySliderContainer {
 	margin: 10px auto 5px auto;
 	max-width: 800px;
@@ -480,7 +482,7 @@ main:not(#right-main) {
 	border-radius: 12px;
 }
 .mySliderButton:hover, .mySliderButtonOn {
-	background-color: #fff;
+	background-color: #000;
 }
 .mySliderArrow {
 	z-index: 3;
@@ -504,7 +506,7 @@ main:not(#right-main) {
 	right: 0px;
 }
 .mySliderArrow:hover {
-	color: #fff;
+	color: #000;
 	text-shadow: 0 0 2px #000;
 }
 
@@ -806,7 +808,7 @@ footer #tryggehandel img {
 		max-width: 100%;
 	}
 	footer { margin:0;}
-	
+		
 }
 @media screen and (max-width: 520px) {
 	#head-search {
@@ -837,6 +839,8 @@ footer #tryggehandel img {
 	}
 }
 
+
+
 @media screen and (max-width: 360px) {
 	#head-search {
 		text-align: left;
@@ -853,6 +857,10 @@ footer #tryggehandel img {
 	}
 	.kundvagn-item .r5 {
 		display: none
+	}
+	.slidertext {
+	font-size:1em;
+	text-align: center;
 	}
 }
 
