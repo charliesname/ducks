@@ -405,14 +405,21 @@ main:not(#right-main) {
 	width: 100%;
 	float: left;
 	margin-top: 5px;
-	background-color: #ddd;
+	background-color: #fff;
 	padding: 2px 0 2px 2px;
 	border-radius: 3px;
 }
 
+.produkter {
+	background-color: #ddd;
+	border: solid #ddd 2px;
+}
 
 /* SLIDER */
 
+.slidercontainer {
+	border-top: solid #ddd 2px;
+	}
 
 #mySliderContainer {
 	margin: 10px auto 5px auto;
@@ -420,8 +427,7 @@ main:not(#right-main) {
 	height: 300px;
 	position: relative;
 	overflow: hidden;
-	border-radius: 3px;
-}
+	}
 #mySliderContainer h2 {
 	color: rgba(0, 0, 0, .75);
 	margin-top: 5px;
@@ -520,7 +526,7 @@ footer {
 	color: #fff;
 	max-width: 1200px;
 	/*height: 180px;*/
-	margin: 8px;
+	margin:2px;
 	padding: 15px;
 	border-radius: 3px;
 }
