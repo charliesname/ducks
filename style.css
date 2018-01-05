@@ -585,6 +585,7 @@ footer #tryggehandel img {
 .produktbild_produktsida {
 	height: 300px;
 	display:inline-block;
+	padding: 5px;
 }
 .produktbild_produktsida img {
 	border: 1px solid #666;
@@ -812,7 +813,7 @@ footer #tryggehandel img {
 		margin: 0 auto;
 	}
 	#head-search input[type=text] {
-		width: 70%;
+		width: 90%;
 		margin: 0;
 
 	}
@@ -863,8 +864,7 @@ footer #tryggehandel img {
 		border-radius: 0px;
 		padding: 10px;
 		display: table;
-		margin: 0 auto;
-		margin-right: 150px;
+		float: left;
 	}
 	#head-left {
 		text-align: left;
