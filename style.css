@@ -1,7 +1,9 @@
 * {
-	font-family: 'Oswald', sans-serif;
 	padding: 0;
 	margin: 0
+}
+body {
+	font-family: 'Oswald', sans-serif;
 }
 
 .fl {
@@ -532,16 +534,19 @@ footer div {
 	padding-top: 20px;
 }
 footer a {
-	color: #fff;
+	color: #bbb;
 	text-decoration: none;
 }
 footer a:hover {
-	color: #ff0;
+	color: #393;
 }
 footer .title {
 	font-weight: bold;
 	font-size: 1.2em;
 	margin-bottom: 5px;
+}
+#servicelankar a {
+	margin-left: 8px;
 }
 footer #betalning .img1, footer #frakt .img1 {
 	display: block;
@@ -712,7 +717,7 @@ footer #tryggehandel img {
 	text-decoration: none;
 }
 #bestall a:hover {
-	color: #ff0;
+	color: #393;
 }
 #bestall input[type=submit] {
 	cursor: pointer;
