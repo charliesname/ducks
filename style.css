@@ -432,10 +432,10 @@ main:not(#right-main) {
 	margin-top: 5px;
 	z-index: 5;
 	position: absolute;
-	left: 50%;
+	left: 0;
 	top: 0;
 	width: 100%;
-	margin-left: -165px;
+	text-align: center;
 }
 #mySliderMenu {
 	width: 100%;
@@ -889,8 +889,8 @@ footer #tryggehandel img {
 		display: none
 	}
 	.slidertext {
-	font-size:1em;
-	text-align: center;
+		font-size:1em;
+		text-align: center;
 	}
 }
 
