@@ -589,7 +589,8 @@ footer #tryggehandel img {
 }
 .produktbild_produktsida img {
 	border: 1px solid #666;
-	max-width: 100%;
+	width: 270px;
+	height: auto;
 }
 .produkt-info-right .pris {
 	font-size: 1.1em;
