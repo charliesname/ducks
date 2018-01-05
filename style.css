@@ -750,6 +750,26 @@ footer #tryggehandel img {
 	border-radius: 3px;
 }
 
+#policy {
+	padding: 0 10%;
+}
+
+#policy h2 {
+	margin-top: 40px;
+	color: #484
+}
+#policy h3 {
+	margin-top: 20px;
+	color: #484
+}
+#policy p {
+	margin: 10px 0;
+}
+#policy p::first-letter {
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
 .fyranollfyra {
 	color: #dd0;
 }
