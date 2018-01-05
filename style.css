@@ -412,6 +412,7 @@ main:not(#right-main) {
 .produkter {
 	background-color: #ddd;
 	border: solid #ddd 2px;
+	border-radius: 3px;
 }
 
 /* SLIDER */
@@ -872,6 +873,9 @@ footer #tryggehandel img {
 	}
 	#head-left {
 		margin: 0 auto;
+	}
+	#head-left p:not(#rubrik) {
+		font-size: 0.75em;
 	}
 	#head-left img {
 		width: 70px;
