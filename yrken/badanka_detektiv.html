@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Badankor Yrken - Badande Badankor - Badankor för alla!</title>
+		<title>Badanka Brandman - Badande Badankor - Badankor för alla!</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="../style.css">
@@ -43,9 +43,9 @@
 			<form onsubmit="return false">
 			<nav id="main-nav" class="mobile">
 				<ul class="topnav">
-					<li class="menu" onclick="topMenu()"><a href="#">| | |</a></li>
+					<li class="menu" onclick="topMenu()"><a href="#home">| | |</a></li>
 					<li class="left"><a href="../index.html">HEM</a></li>
-					<li class="left"><a class="active" href=" ">YRKEN</a></li>
+					<li class="left"><a class="active" href="badankor_yrken.html">YRKEN</a></li>
 					<li class="left"><a href="../superhjaltar/badankor_heros.html">SUPERHJÄLTAR</a></li>
 					<li class="left"><a href="../ovriga/badankor_ovriga.html">ÖVRIGA</a></li>
 				</ul>
@@ -57,7 +57,8 @@
 			<nav id="bread-crumbs">
 				<ul>
 					<li><a href="../index.html">Hem</a> <span> / </span></li>
-					<li><a href=" ">Badankor Yrkestema</a> <span> / </span></li>
+					<li><a href="../badankor_yrken.html">Badankor Yrkestema</a> <span> / </span></li>
+					<li><a href="#">Badanka Detektiv</a> <span> / </span></li>
 				</ul>
 			</nav>
 
@@ -75,7 +76,7 @@
 				<nav id="left-nav" class="nomobile">
 					<ul class="topnav">
 						<li class="left"><a href="../index.html">HEM</a></li>
-						<li class="left"><a class="active" href=" ">YRKEN</a></li>
+						<li class="left"><a class="active" href="badankor_yrken.html">YRKEN</a></li>
 						<li class="left"><a href="../superhjaltar/badankor_heros.html">SUPERHJÄLTAR</a></li>
 						<li class="left"><a href="../ovriga/badankor_ovriga.html">ÖVRIGA</a></li>
 					</ul>
@@ -83,22 +84,32 @@
 
 				<main id="right-main">
 					<div class="text-produkter">
-				    <h1>Yrkesverksamma Badankor</h1>
-				    <p>Här hittar du badankor med yrkestema. Nedan listas våra badankor i arbetskläder.</p>
+				    <h1>Badanka Brandman</h1>
 				  </div>
 				    <div class="clear"></div>
-				  <div class="flex-produkter">
-				    <a href="badanka_brandman.html"><div class="child-produkter"><div class="produktbild"><img src="../images/yrken/brandman.jpg" alt="Gul badanka Brandman med hjälm"></div><div class="namn"><span>Badanka Brandman</span></div><div class="pris"><span>13kr</span></div></div></a>
-				    <a href="badanka_detektiv.html"><div class="child-produkter"><div class="produktbild"><img src="../images/yrken/detektiv.jpg" alt="Gul badanka Detektiv med förstoringsglas"></div><div class="namn"><span>Badanka Detektiv</span></div><div class="pris"><span>37kr</span></div></div></a>
-				    <a href="badanka_doktor.html"><div class="child-produkter"><div class="produktbild"><img src="../images/yrken/doktor.jpg" alt="Gul badanka med vit läkarrock"></div><div class="namn"><span>Badanka Doktor</span></div><div class="pris"><span>37kr</span></div></div></a>
-				    <a href="badanka_kapten.html"><div class="child-produkter"><div class="produktbild"><img src="../images/yrken/kapten.jpg" alt="Gul badanka med kaptenshatt och kavaj"></div><div class="namn"><span>Badanka Kapten</span></div><div class="pris"><span>13kr</span></div></div></a>
-				    <a href="badanka_pirat.html"><div class="child-produkter"><div class="produktbild"><img src="../images/yrken/pirat.jpg" alt="Gul badanka Pirat med kniv och bandana"></div><div class="namn"><span>Badanka Pirat</span></div><div class="pris"><span>13kr</span></div></div></a>
-						<a href="badanka_systemvetare.html"><div class="child-produkter"><div class="produktbild"><img src="../images/yrken/systemvetare.jpg" alt="Badanka Systemvetare 1337 h4x0r"></div><div class="namn"><span>Badanka Systemvetare</span></div><div class="pris"><span>1337kr</span></div></div></a>
-				  </div>
+						<div class="produkt-info">
+							<div class="produkt-info-left">
+								<div class="produktbild_produktsida"><img src="../images/yrken/brandman.jpg" alt="Gul badanka Brandman med hjälm"></div>
+
+							</div>
+							<div class="produkt-info-right">
+								 <p>Vår populära badanka med brandmanstema. Badankan mäter 8cm i diameter. </p>
+								 <br><br>
+
+								<form name="buy">
+									<span class="pris">Pris: 137kr</span>
+									<br>
+									<br>
+
+									<span>Antal: </span><input type="text" name="antal" pattern="[0-9]" title="Ange antal:" size="2" value="1">
+									<input type="submit" value="Lägg i kundvagn">
+							</div>
+						</div>
 
 					<div class="clear"> </div>
 				</main>
 			</div>
+
 			<div class="clear"> </div>
 			<!-- SLUT main -->
 
