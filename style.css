@@ -37,7 +37,7 @@ div, header, nav, main, aside, footer {
 	display: none
 }
 
-input[type="text"] {
+input[type="text"], select {
 	font-size: 16px;
 	padding: 5px;
 	border: 0;
@@ -188,7 +188,7 @@ main h1 {
 #head-search input[type=text] {
 	width: 400px;
 }
-#head-serach input[type=text], select {
+#head-serach input[type=text] {
     padding: 12px 20px;
     margin: 5px 5px;
     border: 2px solid #ff3;
