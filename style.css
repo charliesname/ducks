@@ -112,7 +112,7 @@ header {
 }
 
 .flex-produkter {
-	margin: 30px 2px 0 0;
+	margin-top: 30px;
 	display: flex;
 	flex-wrap: wrap;
 	background-color: #fff;
@@ -397,16 +397,15 @@ ul.topnav li.sok input[type="image"] {
 #right-main {
 	margin-top: 5px;
 	background-color: #f1f1f1;
-	padding: 2px 0 2px 2px;
 	border-radius: 3px;
 	margin-left: 155px;
 }
 main:not(#right-main) {
 	width: 100%;
 	float: left;
-	margin-top: 5px;
+	margin: 5px 0;
 	background-color: #fff;
-	padding: 2px 0 2px 2px;
+	padding: 2px 0 2px 0px;
 	border-radius: 3px;
 }
 
@@ -525,8 +524,6 @@ footer {
 	background-color: #444;
 	color: #fff;
 	max-width: 1200px;
-	/*height: 180px;*/
-	margin:2px;
 	padding: 15px;
 	border-radius: 3px;
 }
@@ -803,7 +800,7 @@ footer #tryggehandel img {
 	.main-item {
 		width: 32%;
 	}
-	h1 {
+	h1, #rubrik {
 		font-size: 1.5em;
 		margin-top: 1px
 	}
@@ -834,6 +831,10 @@ footer #tryggehandel img {
 	.head-logo.right {
 		display: none
 	}
+	#head-kundvagn {
+		right: 5px;
+		bottom: 5px;
+	}
 	.kundvagn-item .r3 {
 		display: none
 	}
@@ -846,7 +847,6 @@ footer #tryggehandel img {
 }
 
 
-
 @media screen and (max-width: 360px) {
 	#head-search {
 		text-align: left;
@@ -855,10 +855,16 @@ footer #tryggehandel img {
 	#head-left {
 		margin: 0 auto;
 	}
+	#head-left img {
+		width: 70px;
+		height: auto;
+		margin-right: 3px;
+		margin-bottom: 30px;
+	}
 	#head-kundvagn {
 		clear: both;
 	}
-	h1 {
+	h1, #rubrik {
 		font-size: 1.2em;
 	}
 	.kundvagn-item .r5 {
