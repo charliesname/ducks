@@ -750,22 +750,26 @@ footer #tryggehandel img {
 	border-radius: 3px;
 }
 
-#policy {
-	padding: 0 10%;
+#service-div, #policy-div {
+	padding: 0 5% 50px 5%;
+	margin-bottom: 5px;
 }
 
-#policy h2 {
+#service-div h2, #policy-div h2 {
 	margin-top: 40px;
 	color: #484
 }
-#policy h3 {
+#service-div h3, #policy-div h3  {
 	margin-top: 20px;
 	color: #484
 }
-#policy p {
+#service-div p {
+	margin: 5px 0;
+}
+#policy-div p {
 	margin: 10px 0;
 }
-#policy p::first-letter {
+#policy-div p::first-letter {
 	font-size: 1.3em;
 	font-weight: bold;
 }
