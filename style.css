@@ -632,6 +632,14 @@ footer #tryggehandel img {
 	background-color: #ddd;
 	font-weight: bold;
 }
+.kundvagn-item input {
+	vertical-align: middle;
+	margin-top: -5px;
+	text-align: right;
+	font-size: 0.7em;
+	width: 18px;
+	padding: 3px;
+}
 .kundvagn-item1 {
 	background-color: #f9f9f9;
 	border-left: 4px solid #ddd;
@@ -732,6 +740,13 @@ footer #tryggehandel img {
 	background-color: #393;
 	background: linear-gradient(#393, #262);
 	color: #fff;
+}
+#bestall img {
+	margin: 0 5px 5px 0;
+	float: left;
+	width: 75px;
+	height: auto;
+	border-radius: 3px;
 }
 
 .fyranollfyra {
