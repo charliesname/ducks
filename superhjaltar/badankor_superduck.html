@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Badanka Superduck - Badande Badankor - Badankor för alla!</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="../style.css">
+		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+		<script src="../js.js"></script>
+	</head>
+	<body>
+		<div id="container">
+
+
+			<!-- BÖRJAN header -->
+			<header>
+				<div id="div-head">
+					<div id="head-left">
+						<div class="fl head-logo left">
+							<a href="../index.html"><img src="../images/logo_inv.png" alt="Badankor logo"></a>
+						</div>
+						<div class="fl">
+							<a href="../index.html"><p id="rubrik">Badankor.nu</p></a>
+							<p>Badankor för alla tillfällen!</p>
+						</div>
+						<div class="fl head-logo right">
+							<a href="../index.html"><img src="../images/logo_inv_fliped.png" alt="Badankor logo"></a>
+						</div>
+					</div>
+					<div id="head-search">
+						<form>
+				    <input type="text" name="search" placeholder="Sök produkt..">
+				  </form>
+					</div>
+				</div>
+				<div id="head-kundvagn"><a href="../order/kundvagn.html" ><span id="kundvagn">0</span>&nbsp;</a></div>
+				<div class="clear"> </div>
+			</header>
+			<!-- SLUT header -->
+
+
+			<!-- BÖRJAN menu -->
+			<form onsubmit="return false">
+			<nav id="main-nav" class="mobile">
+				<ul class="topnav">
+					<li class="menu" onclick="topMenu()"><a href="#home">| | |</a></li>
+					<li class="left"><a href="../index.html">HEM</a></li>
+					<li class="left"><a href="badankor_yrken.html">YRKEN</a></li>
+					<li class="left"><a class="active" href="../superhjaltar/badankor_heros.html">SUPERHJÄLTAR</a></li>
+					<li class="left"><a href="../ovriga/badankor_ovriga.html">ÖVRIGA</a></li>
+				</ul>
+			</nav>
+			</form>
+
+			<div class="clear"></div>
+
+			<nav id="bread-crumbs">
+				<ul>
+					<li><a href="../index.html">Hem</a> <span> / </span></li>
+					<li><a href="../badankor_heros.html">Badankor Superhjältar</a> <span> / </span></li>
+					<li><a href="#">Badanka Superduck</a> <span> / </span></li>
+				</ul>
+			</nav>
+
+			<div id="lang-div">
+				<img onclick="setLanguage('sv')" src="../images/lang/sv.jpg" alt="svenska flaggan">
+				<img onclick="setLanguage('fi')" src="../images/lang/fi.jpg" alt="finska flaggan">
+				<img onclick="setLanguage('en')" src="../images/lang/en.jpg" alt="engelska flaggan">
+			</div>
+			<!-- SLUT menu -->
+
+
+			<!-- BÖRJAN main -->
+			<div class="clear"></div>
+			<div id="nav-main">
+				<nav id="left-nav" class="nomobile">
+					<ul class="topnav">
+						<li class="left"><a href="../index.html">HEM</a></li>
+						<li class="left"><a href="badankor_yrken.html">YRKEN</a></li>
+						<li class="left"><a class="active" href="../superhjaltar/badankor_heros.html">SUPERHJÄLTAR</a></li>
+						<li class="left"><a href="../ovriga/badankor_ovriga.html">ÖVRIGA</a></li>
+					</ul>
+				</nav>
+
+				<main id="right-main">
+					<div class="text-produkter">
+				    <h1>Badanka Superduck</h1>
+				  </div>
+				    <div class="clear"></div>
+						<div class="produkt-info">
+							<div class="produkt-info-left">
+								<div class="produktbild_produktsida"><img src="../images/superhjaltar/superduck.jpg" alt="badanka Superduck" height="300px width="300px></div>
+
+							</div>
+							<div class="produkt-info-right">
+								 <p>Vår exklusiva Superduck badanka. Stirrig blick med anka på bröstet, cape och ögonbindel. Badankan mäter 8cm i diameter. </p>
+								 <br><br>
+
+								<form name="buy">
+									<span class="pris">Pris: 137kr</span>
+									<br>
+									<br>
+
+									<span>Antal: </span><input type="text" name="antal" pattern="[0-9]" title="Ange antal:" size="2" value="1">
+									<input type="submit" value="Lägg i kundvagn">
+									</form>
+							</div>
+						</div>
+
+					<div class="clear"> </div>
+				</main>
+			</div>
+
+			<div class="clear"> </div>
+			<!-- SLUT main -->
+
+
+			<!-- BÖRJAN footer -->
+			<footer>
+			<div id="servicelankar">
+				<p class="title">Servicelänkar</p>
+				<p><a href="../service/kundservice.html">Kundservice</a></p>
+				<p><a href="../service/returer.html">Returer</a></p>
+				<p><a href="../service/policy.html">Sekretesspolicy</a></p>
+				<p><a href="../service/hjalp.html">Hjälp</a></p>
+				<p><a href="../service/kontakt.html">Kontakta oss</a></p>
+			</div>
+			<div id="betalning">
+				<p class="title">Betalningstjänster</p>
+				<a href="https://www.klarna.com/se/"><img class="img1" src="../images/logo/klarna.png" alt="klarna"></a>
+				<a href="https://www.paypal.com/se/home"><img class="img1" src="../images/logo/paypal.png" alt="paypal"></a>
+				<a href="https://www.visa.se/"><img class="img2" src="../images/logo/visa.png" alt="visa"></a>
+				<a href="https://www.mastercard.se/sv-se.html"><img class="img2" src="../images/logo/mastercard.png" alt="mastercard"></a>
+			</div>
+			<div id="frakt">
+				<p class="title">Frakttjänster</p>
+				<a href="http://www.dhl.se"><img class="img1" src="../images/logo/dhl.png" alt="dhl"></a>
+				<a href="https://www.postnord.se"><img class="img1" src="../images/logo/postnord.png" alt="postnord"></a>
+			</div>
+			<div id="tryggehandel">
+				<a href="https://www.tryggehandel.se/"><img class="img1" src="../images/logo/tryggehandel.png" alt="trygg e-handel"></a>
+			</div>
+			</footer>
+			<!-- SLUT footer -->
+
+
+			<!-- W3C logos for valid HTML5 and CSS3 -->
+			<div class="clear"></div>
+			<div style="margin-top: 100px;">
+				<p>
+				<a href="http://validator.w3.org/check?uri=referer"><img
+				src="http://www.w3.org/html/logo/downloads/HTML5_Logo_64.png"
+				alt="Valid HTML5" height="50" width="50"
+				style="border:0;" /></a>
+				</p>
+				<p>
+				<a href="http://jigsaw.w3.org/css-validator/check/referer">
+				<img style="border:0;width:88px;height:31px"
+				src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+				alt="Valid CSS!" />
+				</a>
+				</p>
+			</div>
+		</div>
+	</body>
+</html>
