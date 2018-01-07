@@ -575,8 +575,8 @@ footer #tryggehandel img {
 	padding-bottom: 12px;
 }
 
-.text-produkter {
-	height: 150px;
+.text-produkter p {
+	margin-bottom: 40px;
 }
 
 .produkt-info-left {
