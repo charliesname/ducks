@@ -37,7 +37,7 @@ div, header, nav, main, aside, footer {
 	display: none
 }
 
-input[type="text"], select {
+input[type="text"], select, textarea {
 	font-size: 16px;
 	padding: 5px;
 	border: 0;
@@ -49,6 +49,10 @@ input[type="image"] {
 	margin-right: -5px;
 	padding: 5px;
 	border: 0;
+}
+textarea {
+	width: 200px;
+	height: 100px;
 }
 
 
@@ -722,7 +726,7 @@ footer #tryggehandel img {
 	margin: 5px 2.5%;
 	border-radius: 3px;
 }
-#bestall p span {
+#bestall p span, #kontaktaoss p span {
 	color: #c00;
 	font-size: 20px;
 	font-weight: bold;
@@ -734,7 +738,7 @@ footer #tryggehandel img {
 #bestall a:hover {
 	color: #393;
 }
-#bestall input[type=submit] {
+#bestall input[type=submit], #kontaktaoss-form input[type=submit] {
 	cursor: pointer;
 	padding: 10px 25px;
 	font-size: 1.2em;
@@ -745,7 +749,7 @@ footer #tryggehandel img {
 	color: #eee;
 	box-shadow: inset 0 0 5px #ddd;
 }
-#bestall input[type=submit]:hover {
+#bestall input[type=submit]:hover, #kontaktaoss-form input[type=submit]:hover {
 	background-color: #393;
 	background: linear-gradient(#393, #262);
 	color: #fff;
@@ -774,12 +778,28 @@ footer #tryggehandel img {
 #service-div p {
 	margin: 5px 0;
 }
+#service-div img {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 700px;
+	height: auto;
+	border-radius: 3px;
+	border: 1px solid #ddd;
+}
 #policy-div p {
 	margin: 10px 0;
 }
 #policy-div p::first-letter {
 	font-size: 1.3em;
 	font-weight: bold;
+}
+
+#kontaktaoss, #kontaktaoss-form {
+	width: 40%;
+	margin: 0 2.5%;
+	float: left;
+	margin-bottom: 25px;
 }
 
 .fyranollfyra {
@@ -893,6 +913,9 @@ footer #tryggehandel img {
 	}
 	.kundvagn-item .r6 {
 		width: 70px;
+	}
+	#kontaktaoss, #kontaktaoss-form {
+		width: 100%;
 	}
 }
 
