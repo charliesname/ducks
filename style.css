@@ -726,7 +726,7 @@ footer #tryggehandel img {
 	margin: 5px 2.5%;
 	border-radius: 3px;
 }
-#bestall p span, #kontaktaoss p span {
+#bestall p span, #kontaktaoss-form p span {
 	color: #c00;
 	font-size: 20px;
 	font-weight: bold;
