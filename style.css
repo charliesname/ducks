@@ -574,6 +574,11 @@ footer #tryggehandel img {
 	background-color: #f1f1f1;
 	padding-bottom: 12px;
 }
+
+.text-produkter {
+	height: 150px;
+}
+
 .produkt-info-left {
 	width: 300px;
 	display:inline-block;
