@@ -895,7 +895,7 @@ footer #tryggehandel img {
 @media screen and (max-width: 360px) {
 	#head-search {
 		text-align: left;
-		margin: 10px;
+		margin: 0 10px;
 	}
 	#head-left {
 		margin: 0 auto;
